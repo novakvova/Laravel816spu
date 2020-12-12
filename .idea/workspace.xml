@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427fb05a-04bb-42a6-bc99-18f850db5190" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +169,7 @@
       <workItem from="1607153926570" duration="382000" />
       <workItem from="1607155061014" duration="15106000" />
       <workItem from="1607347063263" duration="2498000" />
-      <workItem from="1607757775530" duration="2667000" />
+      <workItem from="1607757775530" duration="3627000" />
     </task>
     <servers />
   </component>
@@ -235,9 +238,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="131" key="NewPhpClassDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607758510049" />
-    <state x="531" y="300" key="NewPhpFileDialog" timestamp="1607166169886">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="664" y="379" key="NewPhpFileDialog" timestamp="1607761215747">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="664" y="379" key="NewPhpFileDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607761215747" />
     <state x="531" y="300" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1607166169886" />
   </component>
   <component name="XDebuggerManager">

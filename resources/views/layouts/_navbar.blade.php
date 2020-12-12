@@ -14,6 +14,9 @@
                     <a class="nav-link" href="/posts">Пости</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/posts/create">Додати поста</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">

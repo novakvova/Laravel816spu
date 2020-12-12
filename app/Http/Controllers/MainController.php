@@ -24,4 +24,13 @@ class MainController extends Controller
         return view('posts.index', ['items'=>$posts]);
     }
 
+    public function Create(Request $request)
+    {
+        $categories = Category::query()->get();
+        // Post::query()->array_push($posts );
+        return view('posts.create', ['category' => $categories, 'title' => 'Додати пост']);
+    }
+
+
+
 }
