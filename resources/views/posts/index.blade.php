@@ -10,12 +10,17 @@
                     <p class="lead">
                         Category: <a href="#">
                             {{$item->Category["name"]}}
-{{--                            @foreach ($category as $category_items)--}}
-{{--                                @if($category_items["id"] == $item['id_category'])--}}
-{{--                                    {{$category_items["name"]}}--}}
-{{--                                @endif--}}
-{{--                            @endforeach--}}
+
                         </a>
+
+                        Tags:
+                        @foreach ($item->Tags as $tag)
+                            <a href="#">
+                                {{$tag["name"]}}
+                            </a>
+                        @endforeach
+
+
                     </p>
                     <hr class="bg-light">
                     <p class="text-secondary">Posted on {{date('F d, Y', strtotime($item['created_at']))}}
