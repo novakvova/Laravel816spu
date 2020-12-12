@@ -28,7 +28,7 @@
                     <hr class="bg-light">
                     <p class="lead text-center">{{$item['description_short']}}</p>
 
-                    <p class="text-center">{{$item['description']}}</p>
+                    <p class="text-center">{!!$item['description']!!}</p>
                     <hr class="bg-light">
                     <div>Share with friends this URL: <a href="{{$item['url']}}">{{$item['url']}}</a></div>
                     <hr class="bg-light">

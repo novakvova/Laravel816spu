@@ -46,10 +46,10 @@ class MainController extends Controller
             //  Let's do everything here
             if ($request->file('image')->isValid()) {
                 //
-                $validated = $request->validate([
-                    'name' => 'string|max:40',
-                    'image' => 'mimes:jpeg,png|max:1024',
-                ]);
+//                $validated = $request->validate([
+//                    'name' => 'string|max:40',
+//                    'image' => 'mimes:jpeg,png|max:1024',
+//                ]);
                 $extension = $request->image->extension();
                 $name = sha1(microtime()) . "." . $extension;
                 $request->image->storeAs('/public', $name);

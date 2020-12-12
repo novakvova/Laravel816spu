@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'Index']);
-Route::get('/posts', [MainController::class, 'Posts']);
+Route::get('/posts', [MainController::class, 'Posts'])->name("post.list");
 Route::get('/posts/create', [\App\Http\Controllers\MainController::class, 'Create']);
 Route::post('/posts/upload', [\App\Http\Controllers\MainController::class, 'UploadImage']);
 
