@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -13,8 +14,10 @@ class MainController extends Controller
     }
     public function Posts(Request $request)
     {
-        $categories = Category::query()->get();
-        dd($categories);
+//        $categories = Category::query()->get();
+//        dd($categories);
+        $posts = Post::query()->with('Tags')->get();
+        dd($posts);
         return view('posts.index');
     }
 
