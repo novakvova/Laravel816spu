@@ -16,9 +16,12 @@ class MainController extends Controller
     {
 //        $categories = Category::query()->get();
 //        dd($categories);
-        $posts = Post::query()->with('Tags')->get();
-        dd($posts);
-        return view('posts.index');
+        $posts = Post::query()->with('Tags') -> with('Category')->get();
+        //dd($posts);
+//        $items = $posts->map(function ($posts) {
+//            return collect($posts->toArray())->only(['id', 'title', 'description_short', 'description', 'url', 'is_published', 'id_category', 'created_at', 'updated_at'])->all();
+//        });
+        return view('posts.index', ['items'=>$posts]);
     }
 
 }
