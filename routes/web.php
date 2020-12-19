@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -24,4 +25,8 @@ Route::post('/posts/store', [\App\Http\Controllers\MainController::class, 'Store
 
 Route::get('/register', [RegisterController::class,'create']);
 Route::post('/register', [RegisterController::class,'store']);
+
+Route::get('/logout', [LoginController::class,'destroy']);
+Route::get('/login', [LoginController::class,'create']);
+Route::post('/login', [LoginController::class,'store']);
 
