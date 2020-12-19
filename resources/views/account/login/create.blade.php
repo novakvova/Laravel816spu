@@ -32,7 +32,6 @@
         </div>
 
 
-
         <input class="btn btn-success float-right mt-3" type="submit" value="Вхід">
     </form>
 

@@ -18,15 +18,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'Index']);
 Route::get('/posts', [MainController::class, 'Posts'])->name("post.list");
-Route::get('/posts/create', [\App\Http\Controllers\MainController::class, 'Create']);
+Route::get('/posts/create', [\App\Http\Controllers\MainController::class, 'Create'])->middleware('auth');;
 Route::post('/posts/upload', [\App\Http\Controllers\MainController::class, 'UploadImage']);
 
-Route::post('/posts/store', [\App\Http\Controllers\MainController::class, 'Store'])->name("post.store");
+Route::post('/posts/store', [\App\Http\Controllers\MainController::class, 'Store'])->name("post.store")->middleware('auth');;
 
 Route::get('/register', [RegisterController::class,'create']);
 Route::post('/register', [RegisterController::class,'store']);
 
 Route::get('/logout', [LoginController::class,'destroy']);
-Route::get('/login', [LoginController::class,'create']);
+Route::get('/login', [LoginController::class,'create'])->name('login');;
 Route::post('/login', [LoginController::class,'store']);
 

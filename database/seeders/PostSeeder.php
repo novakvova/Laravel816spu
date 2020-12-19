@@ -20,7 +20,8 @@ class PostSeeder extends Seeder
             'description' => "new post about programming with modern programming languages",
             'url' => "programming",
             "is_published" => true,
-            "id_category" => 1
+            "id_category" => 1,
+            "id_user"=>1
         ]);
     }
 }

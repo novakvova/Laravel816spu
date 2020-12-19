@@ -64,7 +64,8 @@ class MainController extends Controller
             'description'=> $request->description,
             'description_short' => $request->description_short,
             'url' => $url,
-            'id_category' => $request->id_category
+            'id_category' => $request->id_category,
+            'id_user' => auth()->id()
         ]);
 
         return redirect()->route('post.list')

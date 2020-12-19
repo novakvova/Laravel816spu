@@ -18,6 +18,11 @@ class Post extends Model
         return $this->belongsTo(\App\Models\Category::class, 'id_category');
     }
 
+    public function User()
+    {
+        return $this->belongsTo(\App\Models\User::class, 'id_user');
+    }
+
     public function Tags()
     {
         return $this->belongsToMany(\App\Models\Tag::class, 'tags_posts', 'id_post', 'id_tag');
