@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,7 @@ Route::get('/posts/create', [\App\Http\Controllers\MainController::class, 'Creat
 Route::post('/posts/upload', [\App\Http\Controllers\MainController::class, 'UploadImage']);
 
 Route::post('/posts/store', [\App\Http\Controllers\MainController::class, 'Store'])->name("post.store");
+
+Route::get('/register', [RegisterController::class,'create']);
+Route::post('/register', [RegisterController::class,'store']);
 

@@ -16,12 +16,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/posts/create">Додати поста</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                @if(auth()->check())
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">{{auth()->user()->name}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Вихід</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Реєструватися</a>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>
